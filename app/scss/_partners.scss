@@ -1,0 +1,98 @@
+.partners {
+  &__title {
+    text-transform: uppercase;
+    @include titletext($main-color);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .partners__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+  .box__partners-logo {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      padding: 0 100px 60px;
+    }
+    .partners__logo {
+      @media screen and (min-width: $breakpoint-lg) {
+        flex: 1 1 25%;
+      }
+      @media screen and (min-width: $breakpoint-md) {
+        flex: 1 1 33%;
+      }
+      @media screen and (min-width: $breakpoint-xs) {
+        flex: 100%;
+      }
+    }
+  }
+  .partners__logo-none {
+    @media screen and (min-width: $breakpoint-xs) {
+      display: none;
+    }
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex: 1 1 33%;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 25%;
+    }
+  }
+  .partners__logo:nth-child(1) {
+    background: #1c4280;
+    @media screen and (min-width: $breakpoint-xxl) {
+      border-radius: 12px 0 0 0;
+    }
+  }
+  .partners__logo:nth-child(2) {
+    background: #143646;
+  }
+  .partners__logo:nth-child(3) {
+    background: #f48b30;
+  }
+  .partners__logo:nth-child(4) {
+    background: #9e4dc3;
+    @media screen and (min-width: $breakpoint-xxl) {
+      border-radius: 0 12px 0 0;
+    }
+  }
+  .partners__logo:nth-child(5) {
+    background: #f48b30;
+  }
+  .partners__logo:nth-child(6) {
+    background: #e2e2e4;
+  }
+  .partners__logo:nth-child(7) {
+    background: #c71c36;
+  }
+  .partners__logo:nth-child(8) {
+    background: #dcf3f9;
+  }
+  .partners__logo:nth-child(9) {
+    background: #eaeaea;
+    @media screen and (min-width: $breakpoint-xxl) {
+      border-radius: 0 0 0 12px;
+    }
+  }
+  .partners__logo:nth-child(10) {
+    background: #282240;
+  }
+  .partners__logo:nth-child(11) {
+    background: #1d4568;
+  }
+  .partners__logo:nth-child(12) {
+    background: #000;
+    @media screen and (min-width: $breakpoint-xxl) {
+      border-radius: 0 0 12px 0;
+    }
+  }
+  .service__partners-title {
+    padding: 60px 0 30px;
+  }
+}

@@ -1,0 +1,107 @@
+.content__services {
+  position: relative;
+
+  .services {
+    &__link {
+      color: $regular-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-right: 15px;
+      text-decoration: none;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 4px;
+        left: 82px;
+        border: 1px solid $regular-color;
+        width: 7px;
+        transform: rotate(45deg);
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 82px;
+        border: 1px solid $regular-color;
+        width: 7px;
+        transform: rotate(-45deg);
+      }
+      &:hover {
+        @include main-gradient-text($gradient-red-text);
+      }
+    }
+  }
+}
+.title-box {
+  margin: 30px 0 20px;
+  @include subtitlemd($basic-white);
+  @include main-gradient-text($gradient-red-text);
+  @media screen and (min-width: $breakpoint-md) {
+    @include title($gradient-red-text);
+    line-height: normal;
+  }
+}
+
+.service__content {
+  @media screen and (min-width: $breakpoint-md) {
+    width: 260px;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 400px;
+  }
+  @media screen and (min-width: $breakpoint-xxl) {
+    width: 493px;
+  }
+}
+.box__service__content {
+  @media screen and (min-width: $breakpoint-md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 964px;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 1320px;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $breakpoint-xxl) {
+    max-width: 1600px;
+    justify-content: space-between;
+    gap: 0;
+    padding: 60px 0;
+  }
+}
+.service {
+  &__content a {
+    text-decoration: none;
+  }
+}
+.service__content svg {
+  width: 92px;
+  height: 92px;
+}
+.service__title {
+  @include servicetitle($regular-color);
+  padding: 30px 0 15px 0;
+}
+.service__text {
+  @include servicetext($basic-white);
+  padding-bottom: 30px;
+}
+
+.service__link-container {
+  position: relative;
+}

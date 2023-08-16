@@ -1,0 +1,115 @@
+.slide__comand-list {
+  padding: 40px 0;
+}
+.team__swiper {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.title__comand-list {
+  height: 100%;
+  padding: 30px;
+  background: $bg-color;
+  position: relative;
+  @media screen and (min-width: $breakpoint-lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title-box {
+    margin-bottom: 30px;
+    @include subtitlemd($basic-white);
+    @include main-gradient-text($gradient-red-text);
+
+    @media screen and (min-width: $breakpoint-md) {
+      @include title($gradient-red-text);
+      line-height: normal;
+    }
+  }
+  .name__comand {
+    @include subtitlemd($text-color);
+    font-size: 16px;
+  }
+}
+.position {
+  @include servicetext($text-color);
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 6px;
+}
+.comand__slide {
+  display: block;
+  border-radius: $radius-md;
+  overflow: hidden;
+  text-align: start;
+  @media screen and (min-width: $breakpoint-lg) {
+    display: flex;
+    height: auto;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    height: 344px;
+  }
+  @media screen and (min-width: $breakpoint-xxl) {
+    height: 300px;
+  }
+}
+.slide__comand-image {
+  width: inherit;
+  height: 500px;
+  position: relative;
+  @media screen and (min-width: $breakpoint-lg) {
+    flex: 1 0 400px;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.services__link-comand {
+  position: relative;
+  color: $regular-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-right: 15px;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 89px;
+    border: 1px solid $regular-color;
+    width: 7px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 89px;
+    border: 1px solid $regular-color;
+    width: 7px;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    @include main-gradient-text($gradient-red-text);
+  }
+}
+.team__swiper-pagination {
+  margin: 30px 0 0;
+  text-align: center;
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: $regular-color;
+  }
+}

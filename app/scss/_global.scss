@@ -1,0 +1,121 @@
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapper {
+  position: relative;
+  background: $gradient-supersoft;
+  border-radius: 0 0 12px 12px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 20px;
+    border: 5px solid #cacadb;
+    width: 335px;
+    border-radius: 0 0 12px 12px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 40px;
+    border: 5px solid #e7e7f2;
+    width: 295px;
+    border-radius: 0 0 12px 12px;
+  }
+  @media screen and (min-width: $breakpoint-md) {
+    &::before {
+      width: 728px;
+    }
+    &::after {
+      width: 688px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    &::before {
+      width: 984px;
+    }
+    &::after {
+      width: 944px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    &::before {
+      width: 1400px;
+    }
+    &::after {
+      width: 1360px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-xxl) {
+    &::before {
+      width: 1880px;
+    }
+    &::after {
+      width: 1840px;
+    }
+  }
+}
+
+.container {
+  // от 0 до 767px
+  padding: 0 30px;
+
+  // от 768 до 1023 включительно
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+  // от 1024 до 1439px
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 964px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 1380px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    max-width: 1660px;
+  }
+}
+.hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  opacity: 0;
+}
+.border__inner {
+  border: 1px solid $separator-color;
+  width: 100%;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__box > .header__box-logo,
+.header__box-about > img {
+  @media screen and (min-width: $breakpoint-xs) {
+    width: 141px;
+    height: 57px;
+  }
+  @media screen and (min-width: $breakpoint-md) {
+    width: 177px;
+    height: 57px;
+  }
+}

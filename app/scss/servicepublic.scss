@@ -1,0 +1,74 @@
+.box {
+  &__service {
+  }
+  &__service-commerce {
+    .service__commerce {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+.service {
+  &__commerce {
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 1360px;
+    }
+  }
+  &__area-box {
+    .title__block {
+      @include servicetitle($basic-white);
+      margin: 30px 0;
+      text-align: start;
+    }
+  }
+  &__area-oneblock {
+    flex: 1 1 50%;
+    padding-bottom: 30px;
+    text-align: left;
+    li {
+      list-style-type: disc;
+      padding-bottom: 15px;
+    }
+    li::marker {
+      color: red;
+    }
+  }
+}
+.service {
+  &__block {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 60px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 1080px;
+      align-items: center;
+    }
+  }
+}
+.sevrice-sub {
+  &__icon {
+    margin-top: 60px;
+  }
+}
+.button {
+  &__service {
+    margin: 30px 0;
+    @include subtextlast($basic-white);
+    width: 208px;
+    height: 56px;
+    background: $regular-color;
+    border-radius: $radius-md;
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+
+    @media screen and (min-width: $breakpoint-lg) {
+      margin: 30px 0 60px 0;
+    }
+  }
+}

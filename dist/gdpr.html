@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GDPR</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+	<symbol id="social-instagram" width="24" height="25" viewBox="0 0 24 25" fill="none">
+		<g clip-path="url(#clip0_22724_9611)">
+		<path d="M3.6 9.89062H7.2V21.2906H3.6V9.89062ZM5.4 4.19063C6.6 4.19063 7.5 5.09062 7.5 6.29062C7.35 7.34062 6.45 8.39062 5.4 8.39062C4.2 8.39062 3.3 7.34062 3.3 6.29062C3.3 5.09062 4.2 4.19063 5.4 4.19063ZM9.3 9.89062H12.75V11.3906C13.5 10.1906 14.85 9.59063 16.2 9.59063C19.8 9.59063 20.4 11.9906 20.4 14.9906V21.2906H16.8V15.7406C16.8 14.3906 16.8 12.7406 15 12.7406C13.2 12.7406 12.9 14.2406 12.9 15.7406V21.4406H9.3V9.89062ZM19.5 0.890625H4.5C1.5 0.890625 0 2.39062 0 5.39062V20.3906C0 23.3906 1.5 24.8906 4.5 24.8906H19.5C22.5 24.8906 24 23.3906 24 20.3906V5.39062C24 2.39062 22.5 0.890625 19.5 0.890625Z" fill="#1178B3"/>
+		</g>
+		<defs>
+		<clipPath id="clip0_22724_9611">
+		<rect width="24" height="24" fill="white" transform="translate(0 0.890625)"/>
+		</clipPath>
+		</defs>
+		</symbol>
+	<symbol id="social-telegram" width="24" height="25" viewBox="0 0 24 25" fill="none">
+		<path d="M8.99997 18.832L7.49997 14.332L24 2.33203L0.932967 11.203C0.932967 11.203 -0.0750331 11.548 0.00446695 12.1855C0.0839669 12.823 0.907467 13.114 0.907467 13.114L6.26997 14.9185L8.69997 22.6495L12.813 19.033L12.8025 19.0255L18.213 23.1745C19.6725 23.812 20.2035 22.4845 20.2035 22.4845L24 2.33203L8.99997 18.832Z" fill="#3CACDC"/>
+		</symbol>
+	<symbol id="social-facebook" width="24" height="25" viewBox="0 0 24 25" fill="none">
+		<g clip-path="url(#clip0_22724_9607)">
+		<path d="M22.6755 0.890625H1.3245C0.5925 0.890625 0 1.48313 0 2.21513V23.5661C0 24.2981 0.5925 24.8906 1.3245 24.8906H12.819V15.5966H9.69V11.9756H12.819V9.30112C12.819 6.20212 14.712 4.51613 17.478 4.51613C18.8025 4.51613 19.941 4.61212 20.2725 4.65712V7.89713H18.3525C16.8525 7.89713 16.56 8.61712 16.56 9.66712V11.9771H20.145L19.68 15.6071H16.56V24.8906H22.6755C23.4075 24.8906 24 24.2981 24 23.5661V2.21513C24 1.48313 23.4075 0.890625 22.6755 0.890625Z" fill="#435695"/>
+		</g>
+		<defs>
+		<clipPath id="clip0_22724_9607">
+		<rect width="24" height="24" fill="white" transform="translate(0 0.890625)"/>
+		</clipPath>
+		</defs>
+		</symbol>
+    <symbol id="facebook__footer" viewBox="0 0 39 38" fill="none">
+        <g clip-path="url(#clip0_109860_2850)">
+        <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_109860_2850">
+        <rect width="38" height="38" fill="white" transform="translate(0.5)"/>
+        </symbol>
+		<symbol id="facebook" viewBox="0 0 24 25" fill="none">
+                <g clip-path="url(#clip0_110961_2677)">
+                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#B3B3BA"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_110961_2677">
+                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+		</symbol>
+</svg>
+		<div class="head about__head">
+			<header class="head__header header">
+				<div class="container header__container">
+					<div class="header__inner header__about-inner">
+						<ul class="header__langs">
+							<li class="header__langs-item">
+								<a class="header__langs-link header__langs-link-about" href="#">ук</a>
+							</li>
+							<li class="header__langs-item">
+								<a class="header__langs-link header__langs-link-about" href="#">ру</a>
+							</li>
+							<li class="header__langs-item">
+								<a class="header__langs-link header__langs-link-about active" href="#">en</a>
+							</li>
+						</ul>
+						<address class="about-header__address">Kyiv, Mechnikova str., 14/1</address>
+						<a class="header__phone header__phone-about" href="tel:0800211927">0800 211 927</a>
+						<a class="header__social" href="#">
+							<svg>
+							<use href="#facebook"></use>
+						</svg></a>
+					</div>
+					<div class="header__box header__box-about">
+						<a class="header__box-logo" href="index.html">
+							<img src="images/publications.svg" alt="publications" width="212" height="57">
+						</a>
+						<div class="header__box-burger about__burger">
+							<span></span>
+						</div>
+					</div>
+					<nav class="header__nav about__nav">
+						<div class="header__nav-close"></div>
+						<ul class="header__nav-list nav__about-list">
+							<li class="header__nav-item">
+								<a class="header__nav-link about__link active" href="about.html">about us</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link about__link" href="services.html">services</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link about__link" href="team.html">team</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link about__link" href="publications.html">publication</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link about__link" href="#">contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+<section class="publication__gdbr">
+            <div class="container">
+                <div class="publication__block">
+                <div class="publication__lable">
+                    <picture><source srcset="images/gdpr.webp" type="image/webp"><img src="images/gdpr.jpg" width="100%" height="300"></picture>
+                    <div class="publication__content-box public__content">
+                        <a class="subtitle" href="#"><h3 class="subtitle__content">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3></a>
+                        <p class="data__publication">September 29</p>
+                        <div class="border__inner"></div>
+                        <p class="service__text">On January 21, the French National Data Protection Commission (CNIL) announced on its website that it had fined Google for violating the EU's General Data Protection Regulation (GDPR). It took six months for the EU countries to make a quality level-up in the amount of fines for non-compliance with this standard. Prior to that, the fine was mainly € 20,000-30,000, with the largest fine amounting to € 400,000 and related to a hospital in Portugal. But this precedent is interesting not so much the amount of the fine as the rigidity of the regulator's approaches. Denis Beregovyi, Axon Partners, explains why, especially for Mind.</p> 
+                        <p class="service__text">For what? The group complaints against Google arrived at CNIL on the same day that the GDPR came into force. The complainants reported that Google processed users' personal data without due cause, in particular to create personalized advertising offers.</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title-box">To the attention of Ukrainian security officers: the inspection was conducted online, without searches, without seizure of servers or other visible interference for business. And so it was possible.</h2>
+            <div class="results__box">
+                <h3 class="results__title">According to the results of CNIL inspections revealed violations of two requirements of the GDPR:</h3>
+                <div class="section">
+                    <p class="number">1.</p>
+                    <p class="transcription">Transparency and awareness of users about the processing of personal data.</p>
+                </div>
+                <div class="section">
+                    <p class="number">2.</p>
+                    <p class="transcription">Transparency and awareness of users about the processing of personal data.</p>
+                </div>
+            
+            <p class="service__text">In the case of personalization of advertising, Google was sure to obtain the consent of users, because, firstly, when creating Google accounts, the user agrees to the Privacy Policy, and secondly, Google has a section "Ads personalization", where you can disable this feature.</p>
+        <div class="personalisation__google">
+            <picture><source srcset="images/Illustration.webp" type="image/webp"><img src="images/Illustration.webp" alt="personalisation" width="315" height="195"></picture>
+        <p class="setting__title">This is what the ad personalization settings window in your Google Account looks like</p>
+        </div>
+        <p class="service__text">However, CNIL does not think so, because the information about the personalization of advertising is not clear enough to users. As an example, the Commission claims that the relevant "Personalization" window does not contain information on the full range of Google services that collect and process personal data for this purpose (YouTube, Google search, Play Store, Google pictures, Gmail, etc.). ), and therefore, the user cannot realize to what extent the data is used and how exactly they can be combined.</p>
+        <h3 class="results__title">So, let's walk through the text of the CNIL decision</h3>
+        <p class="service__text">Why France and not Ireland. Google operates in Europe through a legal entity in Ireland. But the case was not initiated by the Irish, but by the French regulator. This is why it happened. If data processing decisions are taken anywhere outside the EU, there is a one-stop mechanism - where the complaint is received, the body considers it. Because Google's data processing center is located in the United States and the complaint was first received in France, CNIL considered it.</p>
+        <div class="border__inner"></div>
+		<div class="social__box">
+			<div class="social__logo">
+			<svg>
+				<use href="#social-facebook"></use>
+			</svg>
+		</div>
+		<div class="social__logo">
+			<svg>
+				<use href="#social-telegram"></use>
+			</svg>
+		</div>
+		<div class="social__logo">
+			<svg>
+				<use href="#social-instagram"></use>
+			</svg>
+		</div>
+		</div>
+		</div>
+    </div>
+    </div>
+        </section>
+<section class="publications">
+	<div class="container">
+            <div class="service__link-container">
+                <a class="publication__link" href="publications.html">publications</a>
+            </div>
+		<div class="content__publication">
+            <h2 class="title-box">Recommended</h2>
+		   <div class="publication__section publication__block">
+			<div class="title__publication publication__lable">
+				<picture><source srcset="images/publications.webp" type="image/webp"><img src="images/publications.webp" width="100%" height="200"></picture>
+				<div class="publication__content-box">
+					<a class="subtitle" href="#"><h3 class="subtitle__content">Equity associate</h3></a>
+					<p class="data__publication">april 22</p>
+					<div class="border__inner"></div>
+					<p class="some__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+				</div>
+			</div>
+			<div class="title__publication publication__lable">
+				<picture><source srcset="images/Cover.webp" type="image/webp"><img src="images/Cover.webp" width="100%" height="200"></picture>
+					<div class="publication__content-box">
+						<a class="subtitle" href="gdpr.html"><h3 class="subtitle__content">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3></a>
+						<p class="data__publication">September 29</p>
+						<div class="border__inner"></div>
+						<p class="some__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+					</div>
+			</div>
+			<div class="title__publication title__publication-lock">
+				<picture><source srcset="images/second.webp" type="image/webp"><img src="images/second.webp" width="100%" height="200"></picture>
+					<div class="publication__content-box">
+						<a class="subtitle" href="#"><h3 class="subtitle__content">Millennial Testament</h3></a>
+						<p class="data__publication">August 19</p>
+						<div class="border__inner"></div>
+						<p class="some__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+					</div>
+                    
+                </div>
+		</div>
+		</div>
+	</div>
+        </section>
+<footer class="footer">
+		<div class="container">
+			<div class="border__inner"></div>
+			<div class="footer__inner">
+				<div class="footer__adress">
+				<address>Kyiv, Mechnikova str., 14/1</address>
+				<div class="elipse"></div>
+				<a class="search__map" href="#">on map</a>
+			</div>
+			<div class="footer__social">
+				<a class="facebook__links" href="#">
+				<svg>
+					<use href="#facebook__footer"></use>
+				</svg>
+			    </a>
+				<div class="elipse"></div>
+				<a class="header__phone" href="tel:0800211927">0800 211 927</a>
+				<div class="elipse"></div>
+				<a class="mailto" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+			</div>			
+			<div class="titulate">© 2021 HLEGAL Law company, LLC</div>
+			</div>
+		</div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+</html>

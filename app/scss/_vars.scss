@@ -1,0 +1,133 @@
+$main-color: #323264;
+$alt-color: #46466e;
+$soft-color: #686887;
+$accent-color: #f0145a;
+$regular-color: #24a3ff;
+$hover-color: #0085ff;
+$active-color: #006ccf;
+$bg-color: #f5f5fa;
+$bg-alt-color: #ededf7;
+$text-color: #b3b3ba;
+$basic-white: #ffffff;
+$separator-color: #e6e6f0;
+$gradient: linear-gradient(130deg, #323264, #323264 75%, #a54b5f 100%);
+$gradient-soft: linear-gradient(42deg,  #323264 15%,  #323264 50%,  #7a425e 88%);
+$gradient-red: linear-gradient(325deg, #f0145a 5%, #693264 70%);
+$gradient-supersoft: linear-gradient(230deg, #323264 10%, #323264 60%, #643e72 90%);
+$gradient-red-text: linear-gradient(90deg, #f0145a, #ef8080 100%);
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-rounded: 50%;
+
+// !breakpoints
+$breakpoint-xs: 375px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
+
+// !MIXINS
+
+@mixin main-gradient-text($bg-color) {
+  background: $bg-color;
+  color: transparent;
+  background-clip: text;
+}
+@mixin subtext($color) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+	color: $color;
+}
+@mixin sometext($color) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+	color: $color;
+}
+@mixin servicetext($basic-white) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+	color: $basic-white;
+}
+@mixin subtextlast($basic-white) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+	color: $basic-white;
+}
+
+@mixin title($color) {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+	color: $color;
+}
+
+@mixin titletext($color) {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+	color: $color;
+}
+
+@mixin servicetitle($color) {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: normal;
+  color: $color;
+  }
+
+@mixin subtitle($color) {
+  font-weight: 700;
+  font-size: 30px;
+	line-height: 36px;
+	color: $color;
+
+	@media screen and (min-width: $breakpoint-md) {
+		font-size: 38px;
+		line-height: 46px;
+	}
+}
+@mixin subtitlemd($color) {
+  font-weight: 700;
+  font-size: 30px;
+	line-height: normal;
+	color: $color;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin base-link {
+  color: $regular-color;
+	text-decoration: none;
+	font-weight: 400;
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: $accent-color;
+	}
+}
+
+// !FONTS
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+	font-display: swap;
+}

@@ -1,0 +1,114 @@
+.publication {
+  background: $bg-color;
+  padding: 30px 0;
+}
+.publication {
+  &__link {
+    color: $regular-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-right: 15px;
+    text-decoration: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 125px;
+      border: 1px solid $regular-color;
+      width: 7px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 125px;
+      border: 1px solid $regular-color;
+      width: 7px;
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      @include main-gradient-text($gradient-red-text);
+    }
+  }
+}
+.publications__title-box {
+  margin: 10px 0 30px 0;
+  @include subtitlemd($basic-white);
+  @include main-gradient-text($gradient-red-text);
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 38px;
+  }
+}
+.publication__content-box {
+  background: #ffff;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  margin-top: -10px;
+  border-radius: 0 0 8px 8px;
+  .subtitle {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  span {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 30px;
+    border: 2px solid $separator-color;
+    width: 255px;
+  }
+}
+.some__text {
+  @include sometext(black);
+  padding-top: 12px;
+}
+.subtitle__content {
+  @include subtextlast($regular-color);
+}
+.data__publication {
+  text-transform: uppercase;
+  @include subtextlast($text-color);
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+.publication__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.title__publication {
+  @media screen and (min-width: $breakpoint-md) {
+    width: 280px;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 420px;
+  }
+  @media screen and (min-width: $breakpoint-xxl) {
+    width: 519px;
+  }
+}
+
+.publication__section > .title__publication-lock {
+  @media screen and (min-width: $breakpoint-md) {
+    flex-grow: 3;
+  }
+}
