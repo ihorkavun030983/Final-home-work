@@ -48,7 +48,7 @@
 })();
 
 const teamSwiper = new Swiper('.team__swiper', {
-	spaceBetween: 30,	
+	spaceBetween: 70,	
 	loop: true,
 	autoplay: false,
 	autoHeight: false,

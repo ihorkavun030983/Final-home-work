@@ -52,8 +52,6 @@
   flex-direction: column;
   padding: 30px;
   position: relative;
-  margin-top: -10px;
-  border-radius: 0 0 8px 8px;
   .subtitle {
     text-decoration: none;
     cursor: pointer;
@@ -86,7 +84,6 @@
   flex-direction: column;
   gap: 30px;
   img {
-    border-radius: 8px;
     object-fit: cover;
   }
 
@@ -96,19 +93,11 @@
   }
 }
 .title__publication {
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 1 30%;
+  background: white;
   @media screen and (min-width: $breakpoint-md) {
-    width: 280px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    width: 420px;
-  }
-  @media screen and (min-width: $breakpoint-xxl) {
-    width: 519px;
-  }
-}
-
-.publication__section > .title__publication-lock {
-  @media screen and (min-width: $breakpoint-md) {
-    flex-grow: 3;
+    flex: 1 1 40%;
   }
 }
